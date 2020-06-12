@@ -1,0 +1,447 @@
+进行词法分析！！
+宏定义：
+include <iostream>
+词法分析词素：
+Line:2 ,(KEYWORD    , int)
+Line:2 ,(IDENTIFIER , add)
+Line:2 ,(SEPERATOR  , ()
+Line:2 ,(KEYWORD    , int)
+Line:2 ,(IDENTIFIER , a)
+Line:2 ,(SEPERATOR  , ,)
+Line:2 ,(KEYWORD    , int)
+Line:2 ,(IDENTIFIER , b)
+Line:2 ,(SEPERATOR  , ))
+Line:2 ,(SEPERATOR  , {)
+Line:3 ,(KEYWORD    , return)
+Line:3 ,(CONST      , 2)
+Line:3 ,(SEPERATOR  , ;)
+Line:4 ,(SEPERATOR  , })
+Line:6 ,(KEYWORD    , int)
+Line:6 ,(IDENTIFIER , main)
+Line:6 ,(SEPERATOR  , ()
+Line:6 ,(KEYWORD    , int)
+Line:6 ,(IDENTIFIER , argc)
+Line:6 ,(SEPERATOR  , ,)
+Line:6 ,(KEYWORD    , char)
+Line:6 ,(OPERATOR   , *)
+Line:6 ,(IDENTIFIER , argv)
+Line:6 ,(SEPERATOR  , ))
+Line:7 ,(SEPERATOR  , {)
+Line:8 ,(KEYWORD    , int)
+Line:8 ,(IDENTIFIER , a_t1)
+Line:8 ,(OPERATOR   , =)
+Line:8 ,(CONST      , 5)
+Line:8 ,(SEPERATOR  , ,)
+Line:8 ,(IDENTIFIER , _d)
+Line:8 ,(OPERATOR   , =)
+Line:8 ,(CONST      , 2)
+Line:8 ,(SEPERATOR  , ;)
+Line:9 ,(IDENTIFIER , _d)
+Line:9 ,(OPERATOR   , =)
+Line:9 ,(CONST      , 3)
+Line:9 ,(OPERATOR   , +)
+Line:9 ,(IDENTIFIER , add)
+Line:9 ,(SEPERATOR  , ()
+Line:9 ,(IDENTIFIER , a_t1)
+Line:9 ,(OPERATOR   , +)
+Line:9 ,(IDENTIFIER , _d)
+Line:9 ,(SEPERATOR  , ,)
+Line:9 ,(IDENTIFIER , _d)
+Line:9 ,(SEPERATOR  , ))
+Line:9 ,(SEPERATOR  , ;)
+Line:10 ,(KEYWORD    , char)
+Line:10 ,(IDENTIFIER , m)
+Line:10 ,(OPERATOR   , =)
+Line:10 ,(CONST      , 'c')
+Line:10 ,(SEPERATOR  , ;)
+Line:11 ,(CONST      , 1E-2)
+Line:11 ,(SEPERATOR  , ;)
+Line:12 ,(KEYWORD    , double)
+Line:12 ,(IDENTIFIER , _23m)
+Line:12 ,(OPERATOR   , =)
+Line:12 ,(CONST      , 10.98)
+Line:12 ,(SEPERATOR  , ;)
+Line:13 ,(KEYWORD    , const)
+Line:13 ,(KEYWORD    , char)
+Line:13 ,(OPERATOR   , *)
+Line:13 ,(IDENTIFIER , str)
+Line:13 ,(OPERATOR   , =)
+Line:13 ,(CONST      , "Attr string")
+Line:13 ,(SEPERATOR  , ;)
+Line:14 ,(IDENTIFIER , str)
+Line:14 ,(SEPERATOR  , [)
+Line:14 ,(CONST      , 3)
+Line:14 ,(SEPERATOR  , ])
+Line:14 ,(OPERATOR   , =)
+Line:14 ,(CONST      , '5')
+Line:14 ,(SEPERATOR  , ;)
+Line:15 ,(KEYWORD    , for)
+Line:15 ,(SEPERATOR  , ()
+Line:15 ,(KEYWORD    , int)
+Line:15 ,(IDENTIFIER , i)
+Line:15 ,(OPERATOR   , =)
+Line:15 ,(CONST      , 0)
+Line:15 ,(SEPERATOR  , ;)
+Line:15 ,(IDENTIFIER , i)
+Line:15 ,(OPERATOR   , <)
+Line:15 ,(CONST      , 5)
+Line:15 ,(SEPERATOR  , ;)
+Line:15 ,(IDENTIFIER , i)
+Line:15 ,(OPERATOR   , ++)
+Line:15 ,(SEPERATOR  , ))
+Line:15 ,(SEPERATOR  , {)
+Line:17 ,(IDENTIFIER , _d)
+Line:17 ,(OPERATOR   , +=)
+Line:17 ,(IDENTIFIER , i)
+Line:17 ,(SEPERATOR  , ;)
+Line:18 ,(SEPERATOR  , })
+Line:19 ,(KEYWORD    , switch)
+Line:19 ,(SEPERATOR  , ()
+Line:19 ,(IDENTIFIER , m)
+Line:19 ,(SEPERATOR  , ))
+Line:19 ,(SEPERATOR  , {)
+Line:20 ,(KEYWORD    , case)
+Line:20 ,(CONST      , 'c')
+Line:20 ,(SEPERATOR  , :)
+Line:21 ,(SEPERATOR  , ()
+Line:21 ,(IDENTIFIER , _23m)
+Line:21 ,(OPERATOR   , =)
+Line:21 ,(CONST      , 2)
+Line:21 ,(SEPERATOR  , ))
+Line:21 ,(SEPERATOR  , ;)
+Line:22 ,(KEYWORD    , break)
+Line:22 ,(SEPERATOR  , ;)
+Line:23 ,(KEYWORD    , default)
+Line:23 ,(SEPERATOR  , :)
+Line:24 ,(IDENTIFIER , _23m)
+Line:24 ,(OPERATOR   , =)
+Line:24 ,(CONST      , 5E-17)
+Line:24 ,(SEPERATOR  , ;)
+Line:25 ,(KEYWORD    , break)
+Line:25 ,(SEPERATOR  , ;)
+Line:26 ,(SEPERATOR  , })
+Line:27 ,(KEYWORD    , if)
+Line:27 ,(SEPERATOR  , ()
+Line:27 ,(SEPERATOR  , ()
+Line:27 ,(KEYWORD    , int)
+Line:27 ,(SEPERATOR  , ))
+Line:27 ,(IDENTIFIER , m)
+Line:27 ,(OPERATOR   , >)
+Line:27 ,(CONST      , 91)
+Line:27 ,(SEPERATOR  , ))
+Line:27 ,(SEPERATOR  , {)
+Line:28 ,(IDENTIFIER , a_t1)
+Line:28 ,(OPERATOR   , +=)
+Line:28 ,(IDENTIFIER , _d)
+Line:28 ,(SEPERATOR  , ;)
+Line:29 ,(IDENTIFIER , _d)
+Line:29 ,(OPERATOR   , *=)
+Line:29 ,(CONST      , 5.0)
+Line:29 ,(SEPERATOR  , ;)
+Line:30 ,(SEPERATOR  , })
+Line:31 ,(KEYWORD    , else)
+Line:31 ,(SEPERATOR  , {)
+Line:32 ,(KEYWORD    , int)
+Line:32 ,(IDENTIFIER , a_t1)
+Line:32 ,(OPERATOR   , =)
+Line:32 ,(CONST      , 5)
+Line:32 ,(SEPERATOR  , ;)
+Line:33 ,(KEYWORD    , int)
+Line:33 ,(IDENTIFIER , c)
+Line:33 ,(OPERATOR   , =)
+Line:33 ,(CONST      , 3)
+Line:33 ,(SEPERATOR  , ;)
+Line:34 ,(SEPERATOR  , })
+Line:35 ,(KEYWORD    , return)
+Line:35 ,(CONST      , 0)
+Line:35 ,(SEPERATOR  , ;)
+Line:36 ,(SEPERATOR  , })
+每行开始空格数:
+Line:1 , has 0 Space
+Line:2 , has 0 Space
+Line:3 , has 4 Space
+Line:4 , has 0 Space
+Line:5 , has 0 Space
+Line:6 , has 0 Space
+Line:7 , has 0 Space
+Line:8 , has 4 Space
+Line:9 , has 4 Space
+Line:10 , has 4 Space
+Line:11 , has 4 Space
+Line:12 , has 4 Space
+Line:13 , has 4 Space
+Line:14 , has 4 Space
+Line:15 , has 4 Space
+Line:16 , has 8 Space
+Line:17 , has 8 Space
+Line:18 , has 4 Space
+Line:19 , has 4 Space
+Line:20 , has 8 Space
+Line:21 , has 12 Space
+Line:22 , has 12 Space
+Line:23 , has 8 Space
+Line:24 , has 12 Space
+Line:25 , has 12 Space
+Line:26 , has 4 Space
+Line:27 , has 4 Space
+Line:28 , has 8 Space
+Line:29 , has 8 Space
+Line:30 , has 4 Space
+Line:31 , has 4 Space
+Line:32 , has 8 Space
+Line:33 , has 8 Space
+Line:34 , has 4 Space
+Line:35 , has 4 Space
+Line:36 , has 0 Space
+进行语法分析 ！！
+以下打印语法解析树：
+[Root]
+---[FuncDefine]: {Name: add ,Line:2 }
+                 {ReturnType:int ,Modifier: None ,ArgTable:{int:a}{int:b}}
+---------[Return]: {Line:3 }
+-------------[IdNode]: { Name: 2 ,Line: 3 }
+                       {LexType:CONST }
+
+
+---[FuncDefine]: {Name: main ,Line:6 }
+                 {ReturnType:int ,Modifier: None ,ArgTable:{int:argc}{char*:argv}}
+---------[VarDeclare]: {Name: a_t1 ,Line:8 }
+                       {Type:int,Modifier: None }
+
+-------------[IdNode]: { Name: a_t1 ,Line: 8 }
+                       {LexType:IDENTIFIER }
+---------[Operator]: {OpType: = ,Line:8 }
+                     {OpDir: M }
+-------------[IdNode]: { Name: 5 ,Line: 8 }
+                       {LexType:CONST }
+
+---------[VarDeclare]: {Name: _d ,Line:8 }
+                       {Type:int,Modifier: None }
+
+-------------[IdNode]: { Name: _d ,Line: 8 }
+                       {LexType:IDENTIFIER }
+---------[Operator]: {OpType: = ,Line:8 }
+                     {OpDir: M }
+-------------[IdNode]: { Name: 2 ,Line: 8 }
+                       {LexType:CONST }
+
+-------------[IdNode]: { Name: _d ,Line: 9 }
+                       {LexType:IDENTIFIER }
+---------[Operator]: {OpType: = ,Line:9 }
+                     {OpDir: M }
+-----------------[IdNode]: { Name: 3 ,Line: 9 }
+                           {LexType:CONST }
+-------------[Operator]: {OpType: + ,Line:9 }
+                         {OpDir: M }
+-----------------[Function]: {Name: add ,Line:9 }
+                             ArgList: 2 Members
+---------------------------------[IdNode]: { Name: a_t1 ,Line: 9 }
+                                           {LexType:IDENTIFIER }
+-----------------------------[Operator]: {OpType: + ,Line:9 }
+                                         {OpDir: M }
+---------------------------------[IdNode]: { Name: _d ,Line: 9 }
+                                           {LexType:IDENTIFIER }
+-----------------------------[IdNode]: { Name: _d ,Line: 9 }
+                                       {LexType:IDENTIFIER }
+
+---------[VarDeclare]: {Name: m ,Line:10 }
+                       {Type:char,Modifier: None }
+
+-------------[IdNode]: { Name: m ,Line: 10 }
+                       {LexType:IDENTIFIER }
+---------[Operator]: {OpType: = ,Line:10 }
+                     {OpDir: M }
+-------------[IdNode]: { Name: 'c' ,Line: 10 }
+                       {LexType:CONST }
+
+---------[IdNode]: { Name: 1E-2 ,Line: 11 }
+                   {LexType:CONST }
+
+---------[VarDeclare]: {Name: _23m ,Line:12 }
+                       {Type:double,Modifier: None }
+
+-------------[IdNode]: { Name: _23m ,Line: 12 }
+                       {LexType:IDENTIFIER }
+---------[Operator]: {OpType: = ,Line:12 }
+                     {OpDir: M }
+-------------[IdNode]: { Name: 10.98 ,Line: 12 }
+                       {LexType:CONST }
+
+---------[VarDeclare]: {Name: str ,Line:13 }
+                       {Type:char*,Modifier: const }
+
+-------------[IdNode]: { Name: str ,Line: 13 }
+                       {LexType:IDENTIFIER }
+---------[Operator]: {OpType: = ,Line:13 }
+                     {OpDir: M }
+-------------[IdNode]: { Name: "Attr string" ,Line: 13 }
+                       {LexType:CONST }
+
+-----------------[IdNode]: { Name: str ,Line: 14 }
+                           {LexType:IDENTIFIER }
+-------------[Operator]: {OpType: [ ,Line:14 }
+                         {OpDir: M }
+-----------------[IdNode]: { Name: 3 ,Line: 14 }
+                           {LexType:CONST }
+---------[Operator]: {OpType: = ,Line:14 }
+                     {OpDir: M }
+-------------[IdNode]: { Name: '5' ,Line: 14 }
+                       {LexType:CONST }
+
+---------[Branch]: {Type: for ,Line:15 }
+                   Init:
+-------------------[VarDeclare]: {Name: i ,Line:15 }
+                                 {Type:int,Modifier: None }
+-----------------------[IdNode]: { Name: i ,Line: 15 }
+                                 {LexType:IDENTIFIER }
+-------------------[Operator]: {OpType: = ,Line:15 }
+                               {OpDir: M }
+-----------------------[IdNode]: { Name: 0 ,Line: 15 }
+                                 {LexType:CONST }
+
+                   End:
+-----------------------[IdNode]: { Name: i ,Line: 15 }
+                                 {LexType:IDENTIFIER }
+-------------------[Operator]: {OpType: < ,Line:15 }
+                               {OpDir: M }
+-----------------------[IdNode]: { Name: 5 ,Line: 15 }
+                                 {LexType:CONST }
+
+                   Iterate:
+-----------------------[IdNode]: { Name: i ,Line: 15 }
+                                 {LexType:IDENTIFIER }
+-------------------[Operator]: {OpType: ++ ,Line:15 }
+                               {OpDir: L }
+-------------------[IdNode]: { Name: _d ,Line: 17 }
+                             {LexType:IDENTIFIER }
+---------------[Operator]: {OpType: += ,Line:17 }
+                           {OpDir: M }
+-------------------[IdNode]: { Name: i ,Line: 17 }
+                             {LexType:IDENTIFIER }
+
+
+---------[Branch]: {Type: switch ,Line:19 }
+                   Judgement:
+-------------------[IdNode]: { Name: m ,Line: 19 }
+                             {LexType:IDENTIFIER }
+---------------[Branch]: {Type: case ,Line:20 }
+                         Judgement:
+-------------------------[IdNode]: { Name: 'c' ,Line: 20 }
+                                   {LexType:CONST }
+-------------------------[IdNode]: { Name: _23m ,Line: 21 }
+                                   {LexType:IDENTIFIER }
+---------------------[Operator]: {OpType: = ,Line:21 }
+                                 {OpDir: M }
+-------------------------[IdNode]: { Name: 2 ,Line: 21 }
+                                   {LexType:CONST }
+
+---------------------[Break]: {Line:22 }
+
+
+---------------[Branch]: {Type: default ,Line:23 }
+-------------------------[IdNode]: { Name: _23m ,Line: 24 }
+                                   {LexType:IDENTIFIER }
+---------------------[Operator]: {OpType: = ,Line:24 }
+                                 {OpDir: M }
+-------------------------[IdNode]: { Name: 5E-17 ,Line: 24 }
+                                   {LexType:CONST }
+
+---------------------[Break]: {Line:25 }
+
+
+
+---------[Branch]: {Type: if ,Line:27 }
+                   Judgement:
+-----------------------[Operator]: {OpType: Cast ,Line:27 }
+                                   {OpDir: R ,CaseType: int }
+---------------------------[IdNode]: { Name: m ,Line: 27 }
+                                     {LexType:IDENTIFIER }
+-------------------[Operator]: {OpType: > ,Line:27 }
+                               {OpDir: M }
+-----------------------[IdNode]: { Name: 91 ,Line: 27 }
+                                 {LexType:CONST }
+-------------------[IdNode]: { Name: a_t1 ,Line: 28 }
+                             {LexType:IDENTIFIER }
+---------------[Operator]: {OpType: += ,Line:28 }
+                           {OpDir: M }
+-------------------[IdNode]: { Name: _d ,Line: 28 }
+                             {LexType:IDENTIFIER }
+
+-------------------[IdNode]: { Name: _d ,Line: 29 }
+                             {LexType:IDENTIFIER }
+---------------[Operator]: {OpType: *= ,Line:29 }
+                           {OpDir: M }
+-------------------[IdNode]: { Name: 5.0 ,Line: 29 }
+                             {LexType:CONST }
+
+
+---------[Branch]: {Type: else ,Line:31 }
+---------------[VarDeclare]: {Name: a_t1 ,Line:32 }
+                             {Type:int,Modifier: None }
+
+-------------------[IdNode]: { Name: a_t1 ,Line: 32 }
+                             {LexType:IDENTIFIER }
+---------------[Operator]: {OpType: = ,Line:32 }
+                           {OpDir: M }
+-------------------[IdNode]: { Name: 5 ,Line: 32 }
+                             {LexType:CONST }
+
+---------------[VarDeclare]: {Name: c ,Line:33 }
+                             {Type:int,Modifier: None }
+
+-------------------[IdNode]: { Name: c ,Line: 33 }
+                             {LexType:IDENTIFIER }
+---------------[Operator]: {OpType: = ,Line:33 }
+                           {OpDir: M }
+-------------------[IdNode]: { Name: 3 ,Line: 33 }
+                             {LexType:CONST }
+
+
+---------[Return]: {Line:35 }
+-------------[IdNode]: { Name: 0 ,Line: 35 }
+                       {LexType:CONST }
+
+
+进行语义分析!!
+Handle =M || INT        INT
+Handle =M || INT        INT
+Handle +M || INT        INT
+Handle +M || INT        INT
+Handle =M || INT        INT
+Handle =M || CHAR       CHAR
+Handle =M || DOUBLE     DOUBLE
+Handle =M || CHAR_PTR   CHAR_PTR
+Handle [M || CHAR_PTR   INT
+Handle =M || CHAR       CHAR
+Handle =M || INT        INT
+Handle <M || INT        INT
+Handle ++L || INT
+Handle +=M || INT       INT
+Handle =M || DOUBLE     INT
+Handle =M || DOUBLE     DOUBLE
+Handle CastR || CHAR
+Handle >M || INT        INT
+Handle +=M || INT       INT
+Handle *=M || INT       DOUBLE
+Handle =M || INT        INT
+Handle =M || INT        INT
+下面打印函数表
+==================================================
+[ Name: add ][ returnType: INT][argTable:{INT INT }]
+[ Name: main ][ returnType: INT][argTable:{INT CHAR_PTR }]
+==================================================
+下面打印变量表
+==================================================
+[ Name: a ][ Level: 3 ][ Type: INT]
+[ Name: b ][ Level: 3 ][ Type: INT]
+[ Name: argc ][ Level: 3 ][ Type: INT]
+[ Name: argv ][ Level: 3 ][ Type: CHAR_PTR]
+[ Name: a_t1 ][ Level: 3 ][ Type: INT]
+[ Name: _d ][ Level: 3 ][ Type: INT]
+[ Name: m ][ Level: 3 ][ Type: CHAR]
+[ Name: _23m ][ Level: 3 ][ Type: DOUBLE]
+[ Name: str ][ Level: 3 ][ Type: CHAR_PTR]
+[ Name: i ][ Level: 4 ][ Type: INT]
+[ Name: a_t1 ][ Level: 4 ][ Type: INT]
+[ Name: c ][ Level: 4 ][ Type: INT]
+==================================================
