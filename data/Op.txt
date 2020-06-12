@@ -1,0 +1,5 @@
+*var1  &var2  %=
+>>=   &=      ^
+!=       ~
+>        <<      vector<int,double>
+::         :
